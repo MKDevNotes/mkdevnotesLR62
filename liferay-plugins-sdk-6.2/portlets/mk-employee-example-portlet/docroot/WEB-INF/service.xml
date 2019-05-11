@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="org.mk.example.service">
+	<author>muthukumar</author>
+	<namespace>payroll</namespace>
+
+	<entity name="EmployeeDtl" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="employeeId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="firstName" type="String" />
+        <column name="lastName" type="String" />
+        <column name="dob" type="Date" />
+        
+        <column name="departmentId" type="String" />
+        
+        <column name="gender" type="String" />
+        <column name="email" type="String" />
+        <column name="phoneNo" type="String" />
+        <column name="address" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="employeeId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="DepartmentId" return-type="Collection">
+			<finder-column name="departmentId" />
+		</finder>
+		
+		<finder return-type="EmployeeDtl" name="EmployeeId">
+			<finder-column name="employeeId" />
+		</finder>
+	
+		<finder return-type="EmployeeDtl" name="UserEmail" >
+			<finder-column name="firstName" />
+			<finder-column name="email" />
+		</finder>
+		
+	</entity>
+</service-builder>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>liferay-plugins-sdk-6.2</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<filteredResources>
+		<filter>
+			<id>1484185224157</id>
+			<name>portlets</name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-sample-portlet</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1531329850568</id>
+			<name>portlets</name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-mk-employee-management-portlet</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.2.0//EN" "http://www.liferay.com/dtd/liferay-display_6_2_0.dtd">
+
+<display>
+	<category name="MK Development">
+		<portlet id="mk-liferay-basics" />
+		<portlet id="mk-liferay-java-script"></portlet>
+		<portlet id="mk-friendly-url"></portlet>
+		<portlet id="mk-create-url-example"></portlet>
+		<portlet id="mk-multiple-render"></portlet>
+		<portlet id="mk-multiple-action"></portlet>
+		<portlet id="mk-ajax-controller"></portlet>
+		<portlet id="mk-custom-validation-message-controller"></portlet>
+		<portlet id="mk-liferay-validation-controller"></portlet>
+		<portlet id="mk-client-side-validation-controller"></portlet>
+	</category>
+</display>
